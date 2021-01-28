@@ -1,0 +1,8 @@
+<resources>
+
+    <!-- Fragment Labels -->
+    <string name="fragment_specialties_label">Специальности</string>
+    <string name="fragment_employees_label">Список работников</string>
+    <string name="fragment_identity_label">Информация</string>
+
+</resources>

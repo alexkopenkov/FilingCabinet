@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/nav_graph"
+        app:startDestination="@id/nav_specialties">
+
+    <fragment
+        android:id="@+id/nav_specialties"
+        android:name="com.example.filingcabinet.ui.specialties.SpecialtiesFragment"
+        android:label="@string/fragment_specialties_label"
+        tools:layout="@layout/fragment_specialties" >
+        <action
+            android:id="@+id/action_speciality_to_workers"
+            app:destination="@id/nav_employees" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_employees"
+        android:name="com.example.filingcabinet.ui.employees.EmployeesFragment"
+        android:label="@string/fragment_employees_label"
+        tools:layout="@layout/fragment_employees" >
+        <action
+            android:id="@+id/action_workers_to_person"
+            app:destination="@id/nav_identity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_identity"
+        android:name="com.example.filingcabinet.ui.identity.IdentityFragment"
+        android:label="@string/fragment_identity_label"
+        tools:layout="@layout/fragment_identity" />
+
+</navigation>
