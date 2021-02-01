@@ -12,7 +12,7 @@
         android:label="@string/fragment_specialties_label"
         tools:layout="@layout/fragment_specialties" >
         <action
-            android:id="@+id/action_speciality_to_workers"
+            android:id="@+id/action_speciality_to_employees"
             app:destination="@id/nav_employees" />
     </fragment>
 
@@ -22,14 +22,24 @@
         android:label="@string/fragment_employees_label"
         tools:layout="@layout/fragment_employees" >
         <action
-            android:id="@+id/action_workers_to_person"
+            android:id="@+id/action_employees_to_identity"
             app:destination="@id/nav_identity" />
+        <argument
+            android:name="specialtyId"
+            app:argType="integer" />
+        <argument
+            android:name="specialtyName"
+            app:argType="string" />
     </fragment>
 
     <fragment
         android:id="@+id/nav_identity"
         android:name="com.example.filingcabinet.ui.identity.IdentityFragment"
         android:label="@string/fragment_identity_label"
-        tools:layout="@layout/fragment_identity" />
+        tools:layout="@layout/fragment_identity" >
+        <argument
+            android:name="employee"
+            app:argType="com.example.filingcabinet.ui.identity.IdentityUiModel" />
+    </fragment>
 
 </navigation>

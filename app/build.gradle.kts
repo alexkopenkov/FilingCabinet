@@ -1,6 +1,8 @@
 plugins {
     id(Plugins.ANDROID_APPLICATION)
     kotlin(Plugins.KOTLIN_ANDROID)
+    kotlin(Plugins.KOTLIN_KAPT)
+    id(Plugins.KOTLIN_PARCELIZE)
     id(Plugins.NAVIGATION_SAFE_ARGS)
 }
 
@@ -61,11 +63,15 @@ dependencies {
     implementation(Dependencies.CONSTRAINT)
     implementation(Dependencies.CORE_KTX)
 
+    // Coil
+    implementation(Dependencies.COIL)
+
     // Koin
     implementation(Dependencies.KOIN_VIEWMODEL)
 
     // Kotlin
     implementation(Dependencies.KOTLIN)
+    implementation(Dependencies.COROUTINES)
 
     // Material Design
     implementation(Dependencies.MATERIAL)
@@ -73,6 +79,17 @@ dependencies {
     // Navigation
     implementation(Dependencies.NAVIGATION_FRAGMENT)
     implementation(Dependencies.NAVIGATION_UI_KTX)
+
+    // Retrofit
+    implementation(Dependencies.OKHTTP_LOGGING_INTERCEPTOR)
+    implementation(Dependencies.RETROFIT)
+    implementation(Dependencies.RETROFIT_CONVERTER_GSON)
+
+    // Room
+    implementation(Dependencies.ROOM)
+    kapt(Dependencies.ROOM_KAPT)
+    implementation(Dependencies.ROOM_KTX)
+    testImplementation(Dependencies.ROOM_TEST)
 
     // View Binding Delegate
     implementation(Dependencies.VIEW_BINDING)

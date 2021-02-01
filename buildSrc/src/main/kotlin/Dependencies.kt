@@ -1,6 +1,7 @@
 object Versions {
 
     const val APPCOMPAT = "1.2.0"
+    const val COIL = "1.1.1"
     const val CONSTRAINT = "2.0.4"
     const val CORE_KTX = "1.3.2"
     const val COROUTINES = "1.4.2"
@@ -29,8 +30,10 @@ object Dependencies {
     const val RECYCLER_VIEW = "androidx.recyclerview:recyclerview:${Versions.RECYCLER_VIEW}"
     const val SWIPE_REFRESH = "androidx.swiperefreshlayout:swiperefreshlayout:${Versions.SWIPE_REFRESH}"
 
+    // Coil
+    const val COIL = "io.coil-kt:coil:${Versions.COIL}"
+
     // Koin
-    const val KOIN_CORE = "org.koin:koin-core:${Versions.KOIN}"
     const val KOIN_VIEWMODEL = "org.koin:koin-androidx-viewmodel:${Versions.KOIN}"
 
     // Kotlin

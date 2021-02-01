@@ -4,5 +4,15 @@
     <string name="fragment_specialties_label">Специальности</string>
     <string name="fragment_employees_label">Список работников</string>
     <string name="fragment_identity_label">Информация</string>
+    
+    <!-- Employees Fragment -->
+    <string name="employee_age">Возраст: %1$d</string>
+    <string name="employee_birthday_title">День рождения:</string>
+    <string name="employee_birthday">%1$s г. (%2$d)</string>
+    <string name="employee_specialty_title">Специальность:</string>
+    <string name="content_description_photo">Фотография</string>
+
+    <string name="progress">Обновление...</string>
+    <string name="error">Произошла ошибка</string>
 
 </resources>
